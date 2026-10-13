@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Closia — Gestão de processos empresariais | Serra, ES</title>
+<meta name="description" content="Consultoria em gestão de processos empresariais na Serra, ES. Processos documentados, dados consistentes, relatórios gerenciais e implantação de sistemas.">
+<link rel="canonical" href="https://closia.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://closia.com.br/">
+<meta property="og:title" content="Closia — Gestão de processos empresariais">
+<meta property="og:description" content="Consultoria em gestão de processos empresariais na Serra, ES. Processos documentados, dados consistentes, relatórios gerenciais e implantação de sistemas.">
+<meta property="og:image" content="https://closia.com.br/img/closia-og.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#16202B">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+html{-webkit-text-size-adjust:100%}
+:root{padding-top:env(safe-area-inset-top,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
+
+:root{
+  --bg:#F7F5F0; --surface:#FFFFFF; --text:#16202B; --muted:#5A6570;
+  --accent:#15655A; --accent-ink:#FFFFFF; --accent-soft:#E7EFEC;
+  --hair:#DFD9CC; --band:#16202B; --band-text:#F4F2EC; --band-muted:#AAB4BE;
+  --ring:#15655A; --wa:#1F9D55;
+  --shadow:0 1px 2px rgba(22,32,43,.05), 0 10px 30px rgba(22,32,43,.07);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#11171E; --surface:#19212B; --text:#E9E6DF; --muted:#A0A9B3;
+  --accent:#57BCA8; --accent-ink:#0C1613; --accent-soft:#16302B;
+  --hair:#2A333E; --band:#0C1218; --band-text:#E9E6DF; --band-muted:#98A2AC;
+  --ring:#57BCA8; --wa:#34C77B;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.4);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#11171E; --surface:#19212B; --text:#E9E6DF; --muted:#A0A9B3;
+  --accent:#57BCA8; --accent-ink:#0C1613; --accent-soft:#16302B;
+  --hair:#2A333E; --band:#0C1218; --band-text:#E9E6DF; --band-muted:#98A2AC;
+  --ring:#57BCA8; --wa:#34C77B;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Archivo,'Segoe UI',system-ui,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:Sora,'Segoe UI',system-ui,sans-serif;margin:0;line-height:1.14;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:20px}
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--band);
+  border-bottom:1px solid rgba(255,255,255,.08)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-name{font-family:Sora,sans-serif;font-size:18px;font-weight:600;letter-spacing:2.6px;color:var(--band-text)}
+.nav{display:flex;gap:24px}
+.nav a{font-size:14px;font-weight:500;color:var(--band-muted);text-decoration:none;padding-block:4px;
+  border-bottom:1px solid transparent}
+.nav a:hover{color:var(--band-text);border-bottom-color:var(--ring)}
+.head-cta{background:var(--ring);color:var(--accent-ink);font-family:Sora,sans-serif;font-size:13.5px;
+  font-weight:600;padding:9px 16px;border-radius:2px;text-decoration:none;white-space:nowrap}
+.head-cta:hover{filter:brightness(1.08)}
+@media (max-width:760px){ .nav{display:none} }
+.hero{background:var(--band);color:var(--band-text)}
+.hero-in{display:grid;grid-template-columns:1fr auto;gap:52px;align-items:center;padding-block:76px 86px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:3.2px;text-transform:uppercase;color:var(--ring);margin-bottom:20px}
+.hero h1{font-size:clamp(33px,5.2vw,56px);font-weight:600;color:var(--band-text);letter-spacing:-.6px}
+.hero .lead{margin-top:22px;max-width:54ch;font-size:clamp(17px,2vw,19.5px);color:var(--band-muted);line-height:1.6}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:Sora,sans-serif;font-size:15.5px;font-weight:600;
+  padding:14px 24px;border-radius:2px;text-decoration:none;border:1px solid transparent}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{filter:brightness(1.08)}
+.btn-solid{background:var(--ring);color:var(--accent-ink)}
+.btn-solid:hover{filter:brightness(1.08)}
+.btn-ghost{border-color:rgba(255,255,255,.3);color:var(--band-text)}
+.btn-ghost:hover{border-color:var(--ring)}
+.hero-mark{width:200px;height:200px;flex-shrink:0}
+@media (max-width:860px){ .hero-in{grid-template-columns:1fr;gap:34px;padding-block:54px 66px}
+  .hero-mark{width:132px;height:132px;order:-1} }
+.trust{background:var(--band);border-top:1px solid rgba(255,255,255,.1)}
+.trust-in{display:flex;flex-wrap:wrap;gap:12px 40px;padding-block:20px 26px}
+.trust-i{display:flex;align-items:baseline;gap:9px;font-size:14.5px;color:var(--band-muted)}
+.trust-i b{font-family:Sora,sans-serif;font-size:19px;font-weight:600;color:var(--ring);font-variant-numeric:tabular-nums}
+section{padding-block:76px}
+.sec-head{max-width:62ch;margin-bottom:40px}
+.sec-label{font-size:12px;font-weight:600;letter-spacing:3.2px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.sec-head h2{font-size:clamp(27px,3.4vw,37px);font-weight:600;letter-spacing:-.3px}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:17px}
+.pains{background:var(--surface);border-block:1px solid var(--hair)}
+.pain-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 32px}
+@media (max-width:720px){ .pain-grid{grid-template-columns:1fr} }
+.pain{display:flex;gap:13px;align-items:flex-start;padding-block:11px}
+.pain svg{flex-shrink:0;margin-top:3px}
+.pain span{font-size:16.5px;color:var(--text)}
+.gain-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media (max-width:900px){ .gain-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:620px){ .gain-grid{grid-template-columns:1fr} }
+.gain{background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:26px 24px 28px;
+  display:flex;flex-direction:column;gap:10px}
+.gain h3{font-size:17.5px;font-weight:600}
+.gain p{color:var(--muted);font-size:15px}
+.gain .n{width:34px;height:34px;margin-bottom:4px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:760px){ .cards{grid-template-columns:1fr} }
+.card{background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:30px 28px 32px;
+  display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:19px;font-weight:600}
+.card p{color:var(--muted);font-size:15.5px}
+.card ul{margin:6px 0 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.card li{position:relative;padding-left:20px;font-size:14.5px;color:var(--muted);line-height:1.5}
+.card li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--accent)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}
+@media (max-width:860px){ .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px} }
+@media (max-width:460px){ .steps{grid-template-columns:1fr} }
+.step{display:flex;flex-direction:column;gap:13px}
+.step svg{width:44px;height:44px}
+.step h3{font-size:17px;font-weight:600}
+.step p{color:var(--muted);font-size:15px}
+.quote-sec{background:var(--surface);border-block:1px solid var(--hair)}
+.quote{max-width:62ch;margin-inline:auto;text-align:center;display:flex;flex-direction:column;gap:22px;align-items:center}
+.quote blockquote{margin:0;font-family:Sora,sans-serif;font-size:clamp(20px,2.7vw,27px);font-weight:500;
+  line-height:1.4;color:var(--text)}
+.quote .who{font-size:15px;color:var(--muted)}
+.quote .ph{display:inline-block;font-size:12px;font-weight:600;letter-spacing:2.2px;text-transform:uppercase;
+  color:var(--accent);background:var(--accent-soft);padding:7px 14px;border-radius:2px}
+.about-in{display:grid;grid-template-columns:1.25fr 1fr;gap:52px;align-items:start}
+@media (max-width:840px){ .about-in{grid-template-columns:1fr;gap:34px} }
+.about p{color:var(--muted);font-size:16.5px;max-width:60ch}
+.about p + p{margin-top:18px}
+.facts{display:flex;flex-direction:column;border-top:1px solid var(--hair)}
+.fact{display:flex;justify-content:space-between;gap:16px;padding-block:15px;border-bottom:1px solid var(--hair)}
+.fact dt{font-size:14.5px;color:var(--muted)}
+.fact dd{margin:0;font-family:Sora,sans-serif;font-size:15px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.contact{background:var(--band);color:var(--band-text)}
+.contact-in{display:grid;grid-template-columns:1fr auto;gap:46px;align-items:center}
+@media (max-width:820px){ .contact-in{grid-template-columns:1fr;gap:30px} }
+.contact h2{font-size:clamp(26px,3.4vw,36px);font-weight:600;color:var(--band-text)}
+.contact p{margin-top:14px;color:var(--band-muted);max-width:48ch;font-size:17px}
+.channels{display:flex;flex-direction:column;gap:13px;min-width:290px}
+.chan{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  border:1px solid rgba(255,255,255,.18);border-radius:3px;padding:14px 16px}
+.chan-label{font-size:11.5px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:var(--band-muted)}
+.chan-val{font-family:Sora,sans-serif;font-size:15.5px;font-weight:500;color:var(--band-text);word-break:break-all}
+.copy{flex-shrink:0;background:transparent;border:1px solid rgba(255,255,255,.24);color:var(--band-text);
+  font-family:Archivo,sans-serif;font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:2px;cursor:pointer}
+.copy:hover{border-color:var(--ring);color:var(--ring)}
+.site-foot{background:var(--band);border-top:1px solid rgba(255,255,255,.1)}
+.foot-in{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;align-items:center;
+  padding-block:24px calc(24px + env(safe-area-inset-bottom,0px));font-size:13px;color:var(--band-muted)}
+.foot-in strong{color:var(--band-text);font-weight:600;letter-spacing:.3px}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:40;display:inline-flex;align-items:center;gap:10px;
+  background:var(--wa);color:#fff;text-decoration:none;font-family:Sora,sans-serif;font-size:15px;font-weight:600;
+  padding:14px 20px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.26);
+  margin-bottom:env(safe-area-inset-bottom,0px)}
+.wa-float:hover{filter:brightness(1.08)}
+.wa-float .t{display:inline}
+@media (max-width:560px){ .wa-float{padding:15px;right:16px;bottom:16px} .wa-float .t{display:none} }
+@media (prefers-reduced-motion: no-preference){
+  .hero-mark .a1{animation:d1 1100ms cubic-bezier(.22,.61,.36,1) both}
+  .hero-mark .a2{animation:d2 700ms cubic-bezier(.22,.61,.36,1) 880ms both}
+  @keyframes d1{from{stroke-dashoffset:158}to{stroke-dashoffset:0}}
+  @keyframes d2{from{stroke-dashoffset:-134}to{stroke-dashoffset:-172}}
+}
+
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Closia Soluções Empresariais LTDA.",
+"description":"Consultoria em gestão de processos empresariais na Serra, ES. Processos documentados, dados consistentes, relatórios gerenciais e implantação de sistemas.","url":"https://closia.com.br/","email":"contato@closia.com.br",
+"telephone":"+55-27-99772-7821","areaServed":"BR",
+"address":{"@type":"PostalAddress","addressLocality":"Serra","addressRegion":"ES","addressCountry":"BR"}}
+</script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#topo">
+      <svg width="28" height="28" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <circle cx="50" cy="50" r="36" stroke="var(--band-text)" stroke-width="11" stroke-linecap="round" stroke-dasharray="158 68.194" transform="rotate(-90 50 50)"></circle>
+        <circle cx="50" cy="50" r="36" stroke="var(--ring)" stroke-width="11" stroke-linecap="round" stroke-dasharray="38 188.194" stroke-dashoffset="-172" transform="rotate(-90 50 50)"></circle>
+      </svg>
+      <span class="brand-name">CLOSIA</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#resultados">Resultados</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#metodo">Método</a>
+      <a href="#empresa">A empresa</a>
+    </nav>
+    <a class="head-cta" href="https://wa.me/5527997727821?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Closia%20e%20quero%20falar%20sobre%20o%20meu%20processo." target="_blank" rel="noopener">Falar agora</a>
+  </div>
+</header>
+
+<div class="hero" id="topo">
+  <div class="wrap hero-in">
+    <div>
+      <h1>O fechamento não pode depender de uma pessoa só.</h1>
+      <p class="lead">A Closia estrutura as rotinas da controladoria para que o fechamento ocorra dentro do prazo e que a gestão tome decisões com números confiáveis.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/5527997727821?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Closia%20e%20quero%20falar%20sobre%20o%20meu%20processo." target="_blank" rel="noopener"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.04 21.8h-.01c-1.77 0-3.5-.48-5.02-1.38l-.36-.21-3.73.98 1-3.64-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 012.89 6.99c0 5.45-4.44 9.88-9.9 9.88M20.5 3.49A11.78 11.78 0 0012.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.35-1.67a11.84 11.84 0 005.61 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.47-8.39"/></svg>Falar agora no WhatsApp</a>
+        <a class="btn btn-ghost" href="#resultados">Ver o que muda</a>
+      </div>
+    </div>
+    <svg class="hero-mark" width="200" height="200" viewBox="0 0 100 100" fill="none" role="img" aria-label="Closia">
+<circle class="a1" cx="50" cy="50" r="36" stroke="var(--band-text)" stroke-width="8" stroke-linecap="round" stroke-dasharray="158 68.194" transform="rotate(-90 50 50)"></circle>
+<circle class="a2" cx="50" cy="50" r="36" stroke="var(--ring)" stroke-width="8" stroke-linecap="round" stroke-dasharray="38 188.194" stroke-dashoffset="-172" transform="rotate(-90 50 50)"></circle></svg>
+  </div>
+</div>
+
+<section class="pains" id="dores">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Soa familiar?</div>
+      <h2>Se mais de dois destes acontecem na sua operação, o problema é de processo.</h2>
+    </div>
+    <div class="pain-grid">
+      <div class="pain"><svg class="" width="22" height="22" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="11"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="11" stroke-linecap="round" stroke-dasharray="140.2 226.2" transform="rotate(-90 50 50)"></circle></svg><span>O fechamento atrasa toda vez que alguém não cumpre as atividades.</span></div>
+      <div class="pain"><svg class="" width="22" height="22" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="11"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="11" stroke-linecap="round" stroke-dasharray="140.2 226.2" transform="rotate(-90 50 50)"></circle></svg><span>Relatórios trazem números inconsistentes para a tomada de decisões.</span></div>
+      <div class="pain"><svg class="" width="22" height="22" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="11"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="11" stroke-linecap="round" stroke-dasharray="140.2 226.2" transform="rotate(-90 50 50)"></circle></svg><span>A auditoria chega e a equipe para com os fechamentos.</span></div>
+      <div class="pain"><svg class="" width="22" height="22" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="11"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="11" stroke-linecap="round" stroke-dasharray="140.2 226.2" transform="rotate(-90 50 50)"></circle></svg><span>O sistema foi implantado às pressas e a equipe corrige lançamentos todo mês.</span></div>
+      <div class="pain"><svg class="" width="22" height="22" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="11"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="11" stroke-linecap="round" stroke-dasharray="140.2 226.2" transform="rotate(-90 50 50)"></circle></svg><span>Decisões importantes esperando dados que demoram ou não convencem.</span></div>
+      <div class="pain"><svg class="" width="22" height="22" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="11"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="11" stroke-linecap="round" stroke-dasharray="140.2 226.2" transform="rotate(-90 50 50)"></circle></svg><span>A rotina só existe na cabeça de uma pessoa, e ninguém mais sabe executar.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="resultados">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">O que muda</div>
+      <h2>Rotina previsível, número confiável, decisão mais rápida.</h2>
+      <p>Não entregamos apenas o diagnóstico. O trabalho termina quando a sua equipe opera o processo sozinha, com os controles funcionando.</p>
+    </div>
+    <div class="gain-grid">
+      <div class="gain"><svg class="n" width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="56.5 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Otimização de entregas</h3><p>Calendário de fechamento com responsável, prazo e ponto de conferência em cada etapa. O atraso deixa de ser surpresa e vira exceção rastreável.</p></div>
+      <div class="gain"><svg class="n" width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="101.8 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Dados claros e consistentes</h3><p>Uma fonte definida por número, documentada e conferida. Acaba a divergência entre sistema, planilha e relatório.</p></div>
+      <div class="gain"><svg class="n" width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="140.2 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Decisão mais assertiva</h3><p>Indicadores com origem rastreável e relatório gerencial que a diretoria lê sem precisar de tradução.</p></div>
+      <div class="gain"><svg class="n" width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="176.4 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Visibilidade de projeto (PMO)</h3><p>Escopo, marcos, responsáveis e status de cada frente em um painel único. Você sabe o que está parado e por quê.</p></div>
+      <div class="gain"><svg class="n" width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="203.6 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Análise de dados</h3><p>Cruzamento entre sistemas, automação de planilhas manuais e tratamento de base para que o número chegue pronto.</p></div>
+      <div class="gain"><svg class="n" width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="226.2 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Time liberado</h3><p>A equipe volta a analisar em vez de digitar, conferir e refazer, tendo resultados evidenciados após a implantação.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pains" id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">O que fazemos</div>
+      <h2>Quatro frentes, um objetivo: rotina que não trava.</h2>
+      <p>Trabalhamos na operação, não no aconselhamento distante. O entregável é o processo funcionando e documentado — não um relatório de recomendações.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Mapeamento e padronização de processos</h3>
+        <p>Levantamos como a rotina funciona hoje, onde ela quebra e quem sustenta cada etapa.</p>
+        <ul><li>Desenho do fluxo atual e do fluxo proposto</li><li>Procedimentos escritos, com responsável e prazo por etapa</li><li>Matriz de controles e pontos de conferência</li><li>Governança de projeto e acompanhamento de marcos</li></ul>
+      </article>
+      <article class="card">
+        <h3>Apoio administrativo e operacional</h3>
+        <p>Assumimos rotinas que a equipe não tem braço para absorver, com escopo e periodicidade definidos em contrato.</p>
+        <ul><li>Execução de rotinas administrativas recorrentes</li><li>Organização e preparação de documentos</li><li>Controle de prazos e acompanhamento de entregas</li><li>Padronização e rastreabilidade documental</li></ul>
+      </article>
+      <article class="card">
+        <h3>Implantação e parametrização de sistemas</h3>
+        <p>Sistema mal parametrizado gera retrabalho todo mês. Ajustamos a ferramenta ao processo, e não o contrário.</p>
+        <ul><li>Levantamento de requisitos e desenho de estruturas</li><li>Parametrização de plataformas de gestão</li><li>Integração e conferência de cargas entre sistemas</li><li>Treinamento da equipe na ferramenta</li></ul>
+      </article>
+      <article class="card">
+        <h3>Relatórios gerenciais e análise de dados</h3>
+        <p>Informação que a gestão consegue ler e usar na decisão, entregue na cadência que o negócio pede.</p>
+        <ul><li>Definição de indicadores e fonte de cada número</li><li>Painéis e relatórios recorrentes</li><li>Automação de planilhas e rotinas manuais</li><li>Documentação de como cada número é apurado</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Como trabalhamos</div>
+      <h2>Um ciclo que só termina quando fecha.</h2>
+      <p>As quatro etapas seguem nesta ordem porque cada uma depende da anterior. O trabalho não é entregue no desenho — é entregue quando a rotina roda sozinha.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><svg class="" width="44" height="44" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="56.5 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Diagnóstico</h3><p>Acompanhamos um ciclo completo da rotina para ver onde ela realmente trava, com dados e não com suposição.</p></div>
+      <div class="step"><svg class="" width="44" height="44" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="113.1 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Desenho</h3><p>Redesenhamos o fluxo, definimos controles e escrevemos o procedimento com responsável e prazo por etapa.</p></div>
+      <div class="step"><svg class="" width="44" height="44" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="169.6 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Implantação</h3><p>Parametrizamos o sistema, rodamos o processo junto com a equipe e ajustamos o que o papel não previu.</p></div>
+      <div class="step"><svg class="" width="44" height="44" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+<circle cx="50" cy="50" r="36" stroke="var(--hair)" stroke-width="9"></circle>
+<circle cx="50" cy="50" r="36" stroke="var(--accent)" stroke-width="9" stroke-linecap="round" stroke-dasharray="226.2 226.2" transform="rotate(-90 50 50)"></circle></svg><h3>Operação e acompanhamento</h3><p>A rotina passa a rodar com a sua equipe. Ficamos no acompanhamento recorrente ou saímos de cena — você decide.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="empresa">
+  <div class="wrap about-in about">
+    <div>
+      <div class="sec-label">A empresa</div>
+      <h2 style="font-size:clamp(26px,3.4vw,35px);font-weight:600;margin-bottom:20px">Feita por quem viveu o problema do outro lado da mesa.</h2>
+      <p>A Closia nasceu da experiência de operar dentro da controladoria de empresas, atuando nas áreas contábil, fiscal, financeira, patrimonial e outras — identificando processos que, quando mal estruturados, consomem mais tempo em correção do que em execução.</p>
+      <p>Atuamos exclusivamente em processos, controles, sistemas e informação gerencial. Quando o trabalho exige atividade privativa de contador, ele é conduzido por organização contábil registrada no Conselho Regional de Contabilidade, com quem mantemos parceria.</p>
+    </div>
+    <dl class="facts">
+      <div class="fact"><dt>Sede</dt><dd>Serra — ES</dd></div>
+      <div class="fact"><dt>Atendimento</dt><dd>Presencial e remoto</dd></div>
+      <div class="fact"><dt>Formato</dt><dd>Projeto ou recorrente</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="wrap contact-in">
+    <div>
+      <div class="sec-label" style="color:var(--ring)">Contato</div>
+      <h2>Me conte onde a sua rotina trava.</h2>
+      <p>A primeira conversa é um diagnóstico: você descreve os processos, analisamos se é um problema que a Closia resolve e qual seria o formato — projeto ou recorrente.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/5527997727821?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Closia%20e%20quero%20falar%20sobre%20o%20meu%20processo." target="_blank" rel="noopener"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.04 21.8h-.01c-1.77 0-3.5-.48-5.02-1.38l-.36-.21-3.73.98 1-3.64-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 012.89 6.99c0 5.45-4.44 9.88-9.9 9.88M20.5 3.49A11.78 11.78 0 0012.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.35-1.67a11.84 11.84 0 005.61 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.47-8.39"/></svg>Chamar no WhatsApp</a>
+      </div>
+    </div>
+    <div class="channels">
+      <div class="chan">
+        <div><div class="chan-label">E-mail</div><div class="chan-val" id="v-mail">contato@closia.com.br</div></div>
+        <button class="copy" type="button" data-target="v-mail">Copiar</button>
+      </div>
+      <div class="chan">
+        <div><div class="chan-label">WhatsApp</div><div class="chan-val" id="v-fone">+55 (27) 99772-7821</div></div>
+        <button class="copy" type="button" data-target="v-fone">Copiar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <div><strong>CLOSIA SOLUÇÕES EMPRESARIAIS LTDA.</strong> · CNPJ 69.377.027/0001-02</div>
+    <div>Serra — Espírito Santo · closia.com.br</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5527997727821?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Closia%20e%20quero%20falar%20sobre%20o%20meu%20processo." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.04 21.8h-.01c-1.77 0-3.5-.48-5.02-1.38l-.36-.21-3.73.98 1-3.64-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 012.89 6.99c0 5.45-4.44 9.88-9.9 9.88M20.5 3.49A11.78 11.78 0 0012.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.35-1.67a11.84 11.84 0 005.61 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.47-8.39"/></svg><span class="t">WhatsApp</span></a>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var el = document.getElementById(btn.dataset.target); if(!el) return;
+    var text = el.textContent.trim();
+    var done = function(){ var o = btn.textContent; btn.textContent='Copiado'; setTimeout(function(){btn.textContent=o;},1600); };
+    var fb = function(){ try{ var r=document.createRange(); r.selectNodeContents(el);
+      var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent='Selecionado'; setTimeout(function(){btn.textContent='Copiar';},1600);}catch(e){} };
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done).catch(fb); }
+    else { fb(); }
+  });
+});
+</script>
+</body>
+</html>
