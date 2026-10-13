@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Closia | Gestão de processos empresariais</title>
+    <meta name="description" content="Closia — consultoria em gestão de processos empresariais na Serra, ES." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="Closia | Gestão de processos empresariais" />
+    <meta property="og:description" content="Consultoria em gestão de processos empresariais para empresas que precisam de rotina previsível, controle e decisões melhores." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://closia.com.br/" />
+    <link rel="canonical" href="https://closia.com.br/" />
+    <style>
+      :root {
+        --bg: #f6f4ef;
+        --panel: #ffffff;
+        --ink: #16202b;
+        --muted: #53606a;
+        --brand: #15655a;
+        --brand-2: #0d2f32;
+        --line: #e4dfd5;
+        --cta: #1f9d55;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+      }
+      a { color: inherit; }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background: var(--brand-2);
+        color: white;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 76px;
+        gap: 16px;
+      }
+      .brand {
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.24rem;
+        text-decoration: none;
+      }
+      .nav-links {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+      .nav-links a {
+        color: #dfe7ec;
+        text-decoration: none;
+        font-size: 0.92rem;
+      }
+      .cta {
+        display: inline-block;
+        background: var(--brand);
+        color: white;
+        text-decoration: none;
+        padding: 12px 20px;
+        border-radius: 999px;
+        font-weight: 700;
+      }
+      .hero {
+        background: linear-gradient(180deg, #0e1a22 0%, #0f172a 100%);
+        color: white;
+      }
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 36px;
+        align-items: center;
+        padding: 72px 0 80px;
+      }
+      .eyebrow {
+        color: #8fe2c3;
+        font-size: 0.74rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+      }
+      h1 {
+        font-size: clamp(2.3rem, 4vw, 4rem);
+        line-height: 1.08;
+        margin: 14px 0 18px;
+      }
+      .lead {
+        font-size: 1.15rem;
+        color: #d7e5ef;
+        max-width: 62ch;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 14px 22px;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 999px;
+      }
+      .btn.primary {
+        background: var(--cta);
+        color: white;
+      }
+      .btn.secondary {
+        border: 1px solid rgba(255,255,255,0.38);
+        color: white;
+      }
+      .badge {
+        border: 1px solid rgba(255,255,255,0.16);
+        background: rgba(255,255,255,0.03);
+        border-radius: 16px;
+        padding: 24px;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #dbe9ef;
+      }
+      .badge strong {
+        display: block;
+        font-size: 1.6rem;
+        color: white;
+      }
+      section {
+        padding: 76px 0;
+      }
+      .section-label {
+        color: var(--brand);
+        text-transform: uppercase;
+        letter-spacing: 0.18rem;
+        font-size: 0.74rem;
+        font-weight: 700;
+      }
+      h2 {
+        font-size: clamp(2rem, 3vw, 3rem);
+        line-height: 1.15;
+        margin: 12px 0 16px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 26px 24px;
+      }
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 1.3rem;
+      }
+      .card p, .card li {
+        color: var(--muted);
+      }
+      .card ul {
+        margin: 12px 0 0;
+        padding-left: 18px;
+      }
+      .contact {
+        background: var(--brand-2);
+        color: white;
+      }
+      .contact-box {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 26px;
+        align-items: center;
+      }
+      .contact-card {
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 14px;
+        padding: 18px 20px;
+      }
+      .contact-card strong {
+        display: block;
+        font-size: 0.72rem;
+        letter-spacing: 0.18rem;
+        text-transform: uppercase;
+        color: #b8d8d1;
+        margin-bottom: 6px;
+      }
+      .contact-card a {
+        color: white;
+        text-decoration: none;
+      }
+      footer {
+        background: #0e1a22;
+        color: #dfeaf0;
+        padding: 22px 0;
+      }
+      @media (max-width: 760px) {
+        .hero-inner, .grid, .contact-box {
+          grid-template-columns: 1fr;
+        }
+        .nav {
+          flex-wrap: wrap;
+          padding: 16px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#top">CLOSIA</a>
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="#resultados">Resultados</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#metodo">Método</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a class="cta" href="https://wa.me/5527997727821?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Closia%20e%20quero%20falar%20sobre%20o%20meu%20processo." target="_blank" rel="noreferrer">Falar agora</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <div class="eyebrow">Closia soluções empresariais</div>
+            <h1>O fechamento não pode depender de uma pessoa só.</h1>
+            <p class="lead">A Closia estrutura as rotinas da controladoria para que a gestão tome decisões com números confiáveis, processos claros e rotina previsível.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="https://wa.me/5527997727821?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Closia%20e%20quero%20falar%20sobre%20o%20meu%20processo." target="_blank" rel="noreferrer">Quero falar com a Closia</a>
+              <a class="btn secondary" href="#servicos">Ver serviços</a>
+            </div>
+          </div>
+          <div class="badge">
+            <div>
+              <strong>Processos</strong>
+              com controle, clareza e previsibilidade.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resultados">
+        <div class="container">
+          <div class="section-label">O que muda</div>
+          <h2>Rotina previsível, número confiável e decisão mais rápida.</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Otimização de entregas</h3>
+              <p>Eliminamos retrabalho, gargalos e dependência de “conhecimento localizado”, deixando a operação mais estável.</p>
+            </article>
+            <article class="card">
+              <h3>Dados consistentes</h3>
+              <p>Padronizamos a fonte, a conferência e o fluxo de informação para que a liderança decida com segurança.</p>
+            </article>
+            <article class="card">
+              <h3>Visibilidade de desempenho</h3>
+              <p>Indicadores e relatórios passam a ser úteis no dia a dia, não apenas para a prestação de contas.</p>
+            </article>
+            <article class="card">
+              <h3>Time liberado</h3>
+              <p>A equipe ganha processos mais claros, menos improviso e mais capacidade de execução sem depender de uma pessoa.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" style="background:#f0efe9;">
+        <div class="container">
+          <div class="section-label">O que fazemos</div>
+          <h2>Quatro frentes, um objetivo: rotina que não trava.</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Mapeamento de processos</h3>
+              <ul>
+                <li>Fluxos atuais e propostos</li>
+                <li>Padronização de etapas</li>
+                <li>Controles e responsabilidades</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Apoio administrativo e operacional</h3>
+              <ul>
+                <li>Rotinas recorrentes</li>
+                <li>Organização documental</li>
+                <li>Acompanhamento de prazos</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Implantação de sistemas</h3>
+              <ul>
+                <li>Parametrização</li>
+                <li>Estrutura de dados</li>
+                <li>Conferência e ajustes</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Relatórios gerenciais</h3>
+              <ul>
+                <li>Indicadores</li>
+                <li>Painéis e automações</li>
+                <li>Informação útil para decisão</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="metodo">
+        <div class="container">
+          <div class="section-label">Como trabalhamos</div>
+          <h2>Diagnóstico → desenho → implantação → operação.</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Diagnóstico</h3>
+              <p>Entendemos como a rotina funciona hoje, onde ela trava e o que gera retrabalho.</p>
+            </article>
+            <article class="card">
+              <h3>Desenho</h3>
+              <p>Redesenhamos os processos para eliminar dependências, redundâncias e ruídos operacionais.</p>
+            </article>
+            <article class="card">
+              <h3>Implantação</h3>
+              <p>Aplicamos os ajustes, treinos e controle para que a estrutura funcione na prática.</p>
+            </article>
+            <article class="card">
+              <h3>Operação</h3>
+              <p>Acompanhamos a rotina até que ela se torne estável e seja usada pela equipe sem depender de improviso.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="contact" id="contato">
+      <div class="container contact-box">
+        <div>
+          <div class="section-label" style="color:#9fe0ca;">Contato</div>
+          <h2 style="color:white;">Me conte onde a sua rotina trava.</h2>
+          <p style="color:#dfeaf0; max-width:55ch;">A primeira conversa é um diagnóstico simples: você descreve a operação e a Closia avalia como a rotina pode ser mais clara, previsível e confiável.</p>
+        </div>
+        <div class="contact-card">
+          <strong>Email</strong>
+          <a href="mailto:contato@closia.com.br">contato@closia.com.br</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        CLOSIA SOLUÇÕES EMPRESARIAIS LTDA. · Serra — Espírito Santo · <a href="mailto:contato@closia.com.br" style="color:white; text-decoration:none;">contato@closia.com.br</a>
+      </div>
+    </footer>
+  </body>
+</html>
