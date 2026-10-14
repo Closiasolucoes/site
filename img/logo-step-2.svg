@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Closia step 2">
+  <g fill="none">
+    <circle cx="50" cy="50" r="36" stroke="#F4F2EC" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="36" stroke="#15655A" stroke-width="8" stroke-linecap="round" stroke-dasharray="88 190" transform="rotate(-90 50 50)"/>
+  </g>
+</svg>
